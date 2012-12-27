@@ -7,15 +7,18 @@
 //
 
 #import "AppDelegate.h"
-
 #import "ViewController.h"
 
 @implementation AppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    // Create the main window
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+
+    // Customize application look and feel
+    [self lookAndFeelCustomisation];
+    
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         self.viewController = [[ViewController alloc] initWithNibName:@"ViewController_iPhone" bundle:nil];
     } else {
@@ -26,6 +29,34 @@
     return YES;
 }
 
+- (void) lookAndFeelCustomisation {
+    // Customize navigationBar background
+    UIImage* navbarBackground = [UIImage imageNamed:@"navBar_background_light.png"];
+    [[UINavigationBar appearance] setBackgroundImage:navbarBackground forBarMetrics:UIBarMetricsDefault];
+    
+    // Customize navigationBar buttons
+    UIImage* navBarButton = [[UIImage imageNamed:@"navBar_button_active"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 5, 0, 5)];
+    UIImage* navBarButtonPress = [[UIImage imageNamed:@"navBar_button_press"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 5, 0, 5)];
+    [[UIBarButtonItem appearance] setBackgroundImage:navBarButton forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [[UIBarButtonItem appearance] setBackgroundImage:navBarButtonPress forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+    [[UIBarButtonItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                          HEXCOLOR(0x000000FF), UITextAttributeTextColor,
+                                                          [UIFont fontWithName:@"Helvetica-Light" size:(15.0)],UITextAttributeFont,
+                                                          [UIColor clearColor],UITextAttributeTextShadowColor,nil] forState:UIControlStateNormal];
+    [[UIBarButtonItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                          HEXCOLOR(0xFFFFFFFF), UITextAttributeTextColor,
+                                                          [UIFont fontWithName:@"Helvetica-Light" size:(15.0)],UITextAttributeFont,
+                                                          [UIColor clearColor],UITextAttributeTextShadowColor,nil] forState:UIControlStateHighlighted];
+    
+    // Customize the navigationBar font
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                          HEXCOLOR(0x000000FF), UITextAttributeTextColor,
+                                                          [UIFont fontWithName:@"Helvetica-Light" size:(18.0)],UITextAttributeFont,
+                                                          [UIColor clearColor],UITextAttributeTextShadowColor,nil]];
+
+}
+
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -34,7 +65,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
