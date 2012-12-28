@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ViewController.h"
 
 @interface HomeViewController : NSObject
 
@@ -15,5 +14,6 @@
 @property (weak, nonatomic) IBOutlet UIView* maskView;
 
 - (id)initWithParentViewController:(ViewController*)viewController;
+- (void) didReceiveMemoryWarning;
 
 @end

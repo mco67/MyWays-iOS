@@ -35,6 +35,11 @@
 		7494E8EF168CEF4400E3F866 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7494E8ED168CEF4400E3F866 /* HomeViewController.m */; };
 		7494E8F0168CEF4400E3F866 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7494E8EE168CEF4400E3F866 /* HomeViewController.xib */; };
 		7494E8F2168CFA2B00E3F866 /* navBar_menu_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7494E8F1168CFA2B00E3F866 /* navBar_menu_icon@2x.png */; };
+		7494E981168E3C3700E3F866 /* menuCell_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7494E980168E3C3700E3F866 /* menuCell_background@2x.png */; };
+		7494E985168E405F00E3F866 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7494E984168E405F00E3F866 /* ModalViewController.m */; };
+		7494E9A2168E486900E3F866 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7494E9A0168E486900E3F866 /* MapViewController.m */; };
+		7494E9A3168E486900E3F866 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7494E9A1168E486900E3F866 /* MapViewController.xib */; };
+		7494E9A5168E536200E3F866 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7494E9A4168E536200E3F866 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 741C1E3B168CB20400FAB66C;
 			remoteInfo = "MyWays-iOS";
+		};
+		7494E961168E3AC100E3F866 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7494E959168E3AC100E3F866 /* MapView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 17F31EFA1331050A00122B16;
+			remoteInfo = MapView;
+		};
+		7494E963168E3AC100E3F866 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7494E959168E3AC100E3F866 /* MapView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 17157D87133BBC8300E28941;
+			remoteInfo = MapViewTests;
+		};
+		7494E965168E3AC100E3F866 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7494E959168E3AC100E3F866 /* MapView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2BF3078F0F8AC5C0007014EE;
+			remoteInfo = "Unit Tests";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -85,6 +111,14 @@
 		7494E8ED168CEF4400E3F866 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		7494E8EE168CEF4400E3F866 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		7494E8F1168CFA2B00E3F866 /* navBar_menu_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navBar_menu_icon@2x.png"; path = "Resources/navBar_menu_icon@2x.png"; sourceTree = "<group>"; };
+		7494E959168E3AC100E3F866 /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = "../route-me/MapView/MapView.xcodeproj"; sourceTree = "<group>"; };
+		7494E980168E3C3700E3F866 /* menuCell_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menuCell_background@2x.png"; path = "Resources/menuCell_background@2x.png"; sourceTree = "<group>"; };
+		7494E983168E405F00E3F866 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		7494E984168E405F00E3F866 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		7494E99F168E486900E3F866 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		7494E9A0168E486900E3F866 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		7494E9A1168E486900E3F866 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		7494E9A4168E536200E3F866 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7494E9A5168E536200E3F866 /* QuartzCore.framework in Frameworks */,
 				741C1E41168CB20400FAB66C /* UIKit.framework in Frameworks */,
 				741C1E43168CB20400FAB66C /* Foundation.framework in Frameworks */,
 				741C1E45168CB20400FAB66C /* CoreGraphics.framework in Frameworks */,
@@ -115,6 +150,8 @@
 		741C1E31168CB20400FAB66C = {
 			isa = PBXGroup;
 			children = (
+				7494E9A4168E536200E3F866 /* QuartzCore.framework */,
+				7494E959168E3AC100E3F866 /* MapView.xcodeproj */,
 				741C1E46168CB20400FAB66C /* MyWays-iOS */,
 				741C1E6D168CB20400FAB66C /* MyWays-iOSTests */,
 				741C1E3F168CB20400FAB66C /* Frameworks */,
@@ -146,6 +183,8 @@
 		741C1E46168CB20400FAB66C /* MyWays-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				7494E99E168E484900E3F866 /* Map */,
+				7494E982168E403500E3F866 /* Modal */,
 				7494E8EB168CEF2900E3F866 /* Home */,
 				7494E8D5168CEA9400E3F866 /* Menu */,
 				7494E8CC168CE1D600E3F866 /* Utils */,
@@ -197,7 +236,8 @@
 		7494E8C2168CDF9200E3F866 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7494E8D4168CE9C900E3F866 /* NavigationBar */,
+				7494E97F168E3C2700E3F866 /* Generic */,
+				7494E97E168E3C1E00E3F866 /* MenuView */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -241,6 +281,51 @@
 				7494E8EE168CEF4400E3F866 /* HomeViewController.xib */,
 			);
 			name = Home;
+			sourceTree = "<group>";
+		};
+		7494E95A168E3AC100E3F866 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7494E962168E3AC100E3F866 /* libMapView.a */,
+				7494E964168E3AC100E3F866 /* MapViewTests.octest */,
+				7494E966168E3AC100E3F866 /* RM Unit Tests.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7494E97E168E3C1E00E3F866 /* MenuView */ = {
+			isa = PBXGroup;
+			children = (
+				7494E980168E3C3700E3F866 /* menuCell_background@2x.png */,
+			);
+			name = MenuView;
+			sourceTree = "<group>";
+		};
+		7494E97F168E3C2700E3F866 /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				7494E8D4168CE9C900E3F866 /* NavigationBar */,
+			);
+			name = Generic;
+			sourceTree = "<group>";
+		};
+		7494E982168E403500E3F866 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				7494E983168E405F00E3F866 /* ModalViewController.h */,
+				7494E984168E405F00E3F866 /* ModalViewController.m */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		7494E99E168E484900E3F866 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				7494E99F168E486900E3F866 /* MapViewController.h */,
+				7494E9A0168E486900E3F866 /* MapViewController.m */,
+				7494E9A1168E486900E3F866 /* MapViewController.xib */,
+			);
+			name = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +386,12 @@
 			mainGroup = 741C1E31168CB20400FAB66C;
 			productRefGroup = 741C1E3D168CB20400FAB66C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7494E95A168E3AC100E3F866 /* Products */;
+					ProjectRef = 7494E959168E3AC100E3F866 /* MapView.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				741C1E3B168CB20400FAB66C /* MyWays-iOS */,
@@ -308,6 +399,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7494E962168E3AC100E3F866 /* libMapView.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMapView.a;
+			remoteRef = 7494E961168E3AC100E3F866 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7494E964168E3AC100E3F866 /* MapViewTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MapViewTests.octest;
+			remoteRef = 7494E963168E3AC100E3F866 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7494E966168E3AC100E3F866 /* RM Unit Tests.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "RM Unit Tests.app";
+			remoteRef = 7494E965168E3AC100E3F866 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		741C1E3A168CB20400FAB66C /* Resources */ = {
@@ -327,6 +442,8 @@
 				7494E8EA168CEDAD00E3F866 /* navBar_button_press@2x.png in Resources */,
 				7494E8F0168CEF4400E3F866 /* HomeViewController.xib in Resources */,
 				7494E8F2168CFA2B00E3F866 /* navBar_menu_icon@2x.png in Resources */,
+				7494E981168E3C3700E3F866 /* menuCell_background@2x.png in Resources */,
+				7494E9A3168E486900E3F866 /* MapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +484,8 @@
 				7494E8CF168CE1F000E3F866 /* Utils.m in Sources */,
 				7494E8D9168CEACB00E3F866 /* MenuViewController.m in Sources */,
 				7494E8EF168CEF4400E3F866 /* HomeViewController.m in Sources */,
+				7494E985168E405F00E3F866 /* ModalViewController.m in Sources */,
+				7494E9A2168E486900E3F866 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

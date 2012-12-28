@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
-- (void)showHideInfoView;
+- (void) showHideInfoView;
+- (void) showModalView:(UIView*)view;
+- (void) hideModalView;
 
 @end

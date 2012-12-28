@@ -36,6 +36,10 @@
     return self;
 }
 
+- (void) didReceiveMemoryWarning {
+    
+}
+
 - (IBAction)onMenuButtonTap:(id)sender {
     [self.mainViewController showHideInfoView];
 }
