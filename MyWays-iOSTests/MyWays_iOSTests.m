@@ -26,7 +26,7 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in MyWays-iOSTests");
+    //STFail(@"Unit tests are not implemented yet in MyWays-iOSTests");
 }
 
 @end

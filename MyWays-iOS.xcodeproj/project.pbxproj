@@ -40,6 +40,13 @@
 		7494E9A2168E486900E3F866 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7494E9A0168E486900E3F866 /* MapViewController.m */; };
 		7494E9A3168E486900E3F866 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7494E9A1168E486900E3F866 /* MapViewController.xib */; };
 		7494E9A5168E536200E3F866 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7494E9A4168E536200E3F866 /* QuartzCore.framework */; };
+		74BEE70F169DFF3F00B17A37 /* LocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BEE70E169DFF3F00B17A37 /* LocationService.m */; };
+		74BEE710169DFF3F00B17A37 /* LocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BEE70E169DFF3F00B17A37 /* LocationService.m */; };
+		74EF8080169CB273001538A3 /* Projection.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EF807F169CB273001538A3 /* Projection.m */; };
+		74EF8087169CBA1A001538A3 /* ProjectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EF8086169CBA1A001538A3 /* ProjectionTests.m */; };
+		74EF8088169CBAE4001538A3 /* Projection.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EF807F169CB273001538A3 /* Projection.m */; };
+		74EF8089169CC0F7001538A3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7494E8BF168CDA8200E3F866 /* CoreLocation.framework */; };
+		79E6DA721FBD413DB29B88C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F9EE66B3D64641A7ACFA22 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,30 +57,10 @@
 			remoteGlobalIDString = 741C1E3B168CB20400FAB66C;
 			remoteInfo = "MyWays-iOS";
 		};
-		7494E961168E3AC100E3F866 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7494E959168E3AC100E3F866 /* MapView.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 17F31EFA1331050A00122B16;
-			remoteInfo = MapView;
-		};
-		7494E963168E3AC100E3F866 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7494E959168E3AC100E3F866 /* MapView.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 17157D87133BBC8300E28941;
-			remoteInfo = MapViewTests;
-		};
-		7494E965168E3AC100E3F866 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7494E959168E3AC100E3F866 /* MapView.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2BF3078F0F8AC5C0007014EE;
-			remoteInfo = "Unit Tests";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45F9EE66B3D64641A7ACFA22 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		741C1E3C168CB20400FAB66C /* MyWays-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyWays-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		741C1E40168CB20400FAB66C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		741C1E42168CB20400FAB66C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -111,7 +98,6 @@
 		7494E8ED168CEF4400E3F866 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		7494E8EE168CEF4400E3F866 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		7494E8F1168CFA2B00E3F866 /* navBar_menu_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navBar_menu_icon@2x.png"; path = "Resources/navBar_menu_icon@2x.png"; sourceTree = "<group>"; };
-		7494E959168E3AC100E3F866 /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = "../route-me/MapView/MapView.xcodeproj"; sourceTree = "<group>"; };
 		7494E980168E3C3700E3F866 /* menuCell_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menuCell_background@2x.png"; path = "Resources/menuCell_background@2x.png"; sourceTree = "<group>"; };
 		7494E983168E405F00E3F866 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
 		7494E984168E405F00E3F866 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
@@ -119,6 +105,13 @@
 		7494E9A0168E486900E3F866 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		7494E9A1168E486900E3F866 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		7494E9A4168E536200E3F866 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		74BEE70D169DFF3F00B17A37 /* LocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationService.h; sourceTree = "<group>"; };
+		74BEE70E169DFF3F00B17A37 /* LocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationService.m; sourceTree = "<group>"; };
+		74EF807E169CB273001538A3 /* Projection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Projection.h; sourceTree = "<group>"; };
+		74EF807F169CB273001538A3 /* Projection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Projection.m; sourceTree = "<group>"; };
+		74EF8085169CBA1A001538A3 /* ProjectionTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectionTests.h; sourceTree = "<group>"; };
+		74EF8086169CBA1A001538A3 /* ProjectionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectionTests.m; sourceTree = "<group>"; };
+		ABD67DB727B140809D1F826D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +124,7 @@
 				741C1E43168CB20400FAB66C /* Foundation.framework in Frameworks */,
 				741C1E45168CB20400FAB66C /* CoreGraphics.framework in Frameworks */,
 				7494E8C0168CDA8200E3F866 /* CoreLocation.framework in Frameworks */,
+				79E6DA721FBD413DB29B88C9 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74EF8089169CC0F7001538A3 /* CoreLocation.framework in Frameworks */,
 				741C1E68168CB20400FAB66C /* SenTestingKit.framework in Frameworks */,
 				741C1E69168CB20400FAB66C /* UIKit.framework in Frameworks */,
 				741C1E6A168CB20400FAB66C /* Foundation.framework in Frameworks */,
@@ -151,11 +146,11 @@
 			isa = PBXGroup;
 			children = (
 				7494E9A4168E536200E3F866 /* QuartzCore.framework */,
-				7494E959168E3AC100E3F866 /* MapView.xcodeproj */,
 				741C1E46168CB20400FAB66C /* MyWays-iOS */,
 				741C1E6D168CB20400FAB66C /* MyWays-iOSTests */,
 				741C1E3F168CB20400FAB66C /* Frameworks */,
 				741C1E3D168CB20400FAB66C /* Products */,
+				ABD67DB727B140809D1F826D /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,6 +171,7 @@
 				741C1E42168CB20400FAB66C /* Foundation.framework */,
 				741C1E44168CB20400FAB66C /* CoreGraphics.framework */,
 				741C1E67168CB20400FAB66C /* SenTestingKit.framework */,
+				45F9EE66B3D64641A7ACFA22 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -183,6 +179,7 @@
 		741C1E46168CB20400FAB66C /* MyWays-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				74BEE70B169DFF2600B17A37 /* Services */,
 				7494E99E168E484900E3F866 /* Map */,
 				7494E982168E403500E3F866 /* Modal */,
 				7494E8EB168CEF2900E3F866 /* Home */,
@@ -217,6 +214,8 @@
 		741C1E6D168CB20400FAB66C /* MyWays-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				74EF8085169CBA1A001538A3 /* ProjectionTests.h */,
+				74EF8086169CBA1A001538A3 /* ProjectionTests.m */,
 				741C1E73168CB20400FAB66C /* MyWays_iOSTests.h */,
 				741C1E74168CB20400FAB66C /* MyWays_iOSTests.m */,
 				741C1E6E168CB20400FAB66C /* Supporting Files */,
@@ -247,6 +246,8 @@
 			children = (
 				7494E8CD168CE1F000E3F866 /* Utils.h */,
 				7494E8CE168CE1F000E3F866 /* Utils.m */,
+				74EF807E169CB273001538A3 /* Projection.h */,
+				74EF807F169CB273001538A3 /* Projection.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -281,16 +282,6 @@
 				7494E8EE168CEF4400E3F866 /* HomeViewController.xib */,
 			);
 			name = Home;
-			sourceTree = "<group>";
-		};
-		7494E95A168E3AC100E3F866 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7494E962168E3AC100E3F866 /* libMapView.a */,
-				7494E964168E3AC100E3F866 /* MapViewTests.octest */,
-				7494E966168E3AC100E3F866 /* RM Unit Tests.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		7494E97E168E3C1E00E3F866 /* MenuView */ = {
@@ -328,6 +319,15 @@
 			name = Map;
 			sourceTree = "<group>";
 		};
+		74BEE70B169DFF2600B17A37 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				74BEE70D169DFF3F00B17A37 /* LocationService.h */,
+				74BEE70E169DFF3F00B17A37 /* LocationService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -338,6 +338,7 @@
 				741C1E38168CB20400FAB66C /* Sources */,
 				741C1E39168CB20400FAB66C /* Frameworks */,
 				741C1E3A168CB20400FAB66C /* Resources */,
+				C31EC21C6213472F86D44BD6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -386,12 +387,6 @@
 			mainGroup = 741C1E31168CB20400FAB66C;
 			productRefGroup = 741C1E3D168CB20400FAB66C /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 7494E95A168E3AC100E3F866 /* Products */;
-					ProjectRef = 7494E959168E3AC100E3F866 /* MapView.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				741C1E3B168CB20400FAB66C /* MyWays-iOS */,
@@ -399,30 +394,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		7494E962168E3AC100E3F866 /* libMapView.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libMapView.a;
-			remoteRef = 7494E961168E3AC100E3F866 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7494E964168E3AC100E3F866 /* MapViewTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = MapViewTests.octest;
-			remoteRef = 7494E963168E3AC100E3F866 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7494E966168E3AC100E3F866 /* RM Unit Tests.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "RM Unit Tests.app";
-			remoteRef = 7494E965168E3AC100E3F866 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		741C1E3A168CB20400FAB66C /* Resources */ = {
@@ -471,6 +442,20 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		C31EC21C6213472F86D44BD6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -486,6 +471,8 @@
 				7494E8EF168CEF4400E3F866 /* HomeViewController.m in Sources */,
 				7494E985168E405F00E3F866 /* ModalViewController.m in Sources */,
 				7494E9A2168E486900E3F866 /* MapViewController.m in Sources */,
+				74EF8080169CB273001538A3 /* Projection.m in Sources */,
+				74BEE70F169DFF3F00B17A37 /* LocationService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +481,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				741C1E75168CB20400FAB66C /* MyWays_iOSTests.m in Sources */,
+				74EF8087169CBA1A001538A3 /* ProjectionTests.m in Sources */,
+				74EF8088169CBAE4001538A3 /* Projection.m in Sources */,
+				74BEE710169DFF3F00B17A37 /* LocationService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +587,7 @@
 		};
 		741C1E79168CB20400FAB66C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABD67DB727B140809D1F826D /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyWays-iOS/MyWays-iOS-Prefix.pch";
@@ -608,6 +599,7 @@
 		};
 		741C1E7A168CB20400FAB66C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABD67DB727B140809D1F826D /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyWays-iOS/MyWays-iOS-Prefix.pch";
