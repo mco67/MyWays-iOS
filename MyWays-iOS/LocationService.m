@@ -26,6 +26,7 @@
     if (self = [super init]) {
         self.locationManager = [[CLLocationManager alloc] init];
         self.locationManager.delegate = self;
+        self.locationManager.desiredAccuracy = 30.0;
     }
     return self;
 }

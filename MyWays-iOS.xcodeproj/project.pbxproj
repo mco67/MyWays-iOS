@@ -24,6 +24,7 @@
 		741C1E6A168CB20400FAB66C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741C1E42168CB20400FAB66C /* Foundation.framework */; };
 		741C1E72168CB20400FAB66C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 741C1E70168CB20400FAB66C /* InfoPlist.strings */; };
 		741C1E75168CB20400FAB66C /* MyWays_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 741C1E74168CB20400FAB66C /* MyWays_iOSTests.m */; };
+		745EE8DD169F794800FE60E9 /* IGNTilesSourceCapabilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 745EE8DC169F794800FE60E9 /* IGNTilesSourceCapabilities.m */; };
 		7494E8C0168CDA8200E3F866 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7494E8BF168CDA8200E3F866 /* CoreLocation.framework */; };
 		7494E8CF168CE1F000E3F866 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7494E8CE168CE1F000E3F866 /* Utils.m */; };
 		7494E8D9168CEACB00E3F866 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7494E8D7168CEACB00E3F866 /* MenuViewController.m */; };
@@ -42,9 +43,14 @@
 		7494E9A5168E536200E3F866 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7494E9A4168E536200E3F866 /* QuartzCore.framework */; };
 		74BEE70F169DFF3F00B17A37 /* LocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BEE70E169DFF3F00B17A37 /* LocationService.m */; };
 		74BEE710169DFF3F00B17A37 /* LocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BEE70E169DFF3F00B17A37 /* LocationService.m */; };
-		74EF8080169CB273001538A3 /* Projection.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EF807F169CB273001538A3 /* Projection.m */; };
+		74BEE7BE169F575700B17A37 /* MapService.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BEE7BD169F575700B17A37 /* MapService.m */; };
+		74BEE7C3169F578F00B17A37 /* IGNTilesSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BEE7C2169F578F00B17A37 /* IGNTilesSource.m */; };
+		74BEE7CB169F5A2000B17A37 /* TilesSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BEE7CA169F5A2000B17A37 /* TilesSource.m */; };
+		74BEE7CE169F5AAC00B17A37 /* TilesSourceCapabilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BEE7CD169F5AAB00B17A37 /* TilesSourceCapabilities.m */; };
+		74BEE7CF169F749000B17A37 /* TilesSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BEE7CA169F5A2000B17A37 /* TilesSource.m */; };
+		74BEE7D0169F749000B17A37 /* TilesSourceCapabilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BEE7CD169F5AAB00B17A37 /* TilesSourceCapabilities.m */; };
+		74BEE7D1169F749000B17A37 /* IGNTilesSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BEE7C2169F578F00B17A37 /* IGNTilesSource.m */; };
 		74EF8087169CBA1A001538A3 /* ProjectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EF8086169CBA1A001538A3 /* ProjectionTests.m */; };
-		74EF8088169CBAE4001538A3 /* Projection.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EF807F169CB273001538A3 /* Projection.m */; };
 		74EF8089169CC0F7001538A3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7494E8BF168CDA8200E3F866 /* CoreLocation.framework */; };
 		79E6DA721FBD413DB29B88C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F9EE66B3D64641A7ACFA22 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -84,6 +90,8 @@
 		741C1E71168CB20400FAB66C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		741C1E73168CB20400FAB66C /* MyWays_iOSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyWays_iOSTests.h; sourceTree = "<group>"; };
 		741C1E74168CB20400FAB66C /* MyWays_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWays_iOSTests.m; sourceTree = "<group>"; };
+		745EE8DB169F794800FE60E9 /* IGNTilesSourceCapabilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGNTilesSourceCapabilities.h; sourceTree = "<group>"; };
+		745EE8DC169F794800FE60E9 /* IGNTilesSourceCapabilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGNTilesSourceCapabilities.m; sourceTree = "<group>"; };
 		7494E8BF168CDA8200E3F866 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7494E8CD168CE1F000E3F866 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		7494E8CE168CE1F000E3F866 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
@@ -107,8 +115,14 @@
 		7494E9A4168E536200E3F866 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		74BEE70D169DFF3F00B17A37 /* LocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationService.h; sourceTree = "<group>"; };
 		74BEE70E169DFF3F00B17A37 /* LocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationService.m; sourceTree = "<group>"; };
-		74EF807E169CB273001538A3 /* Projection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Projection.h; sourceTree = "<group>"; };
-		74EF807F169CB273001538A3 /* Projection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Projection.m; sourceTree = "<group>"; };
+		74BEE7BC169F575700B17A37 /* MapService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapService.h; sourceTree = "<group>"; };
+		74BEE7BD169F575700B17A37 /* MapService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapService.m; sourceTree = "<group>"; };
+		74BEE7C1169F578F00B17A37 /* IGNTilesSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGNTilesSource.h; sourceTree = "<group>"; };
+		74BEE7C2169F578F00B17A37 /* IGNTilesSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGNTilesSource.m; sourceTree = "<group>"; };
+		74BEE7C9169F5A1F00B17A37 /* TilesSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TilesSource.h; sourceTree = "<group>"; };
+		74BEE7CA169F5A2000B17A37 /* TilesSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TilesSource.m; sourceTree = "<group>"; };
+		74BEE7CC169F5AAB00B17A37 /* TilesSourceCapabilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TilesSourceCapabilities.h; sourceTree = "<group>"; };
+		74BEE7CD169F5AAB00B17A37 /* TilesSourceCapabilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TilesSourceCapabilities.m; sourceTree = "<group>"; };
 		74EF8085169CBA1A001538A3 /* ProjectionTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectionTests.h; sourceTree = "<group>"; };
 		74EF8086169CBA1A001538A3 /* ProjectionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectionTests.m; sourceTree = "<group>"; };
 		ABD67DB727B140809D1F826D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -246,8 +260,6 @@
 			children = (
 				7494E8CD168CE1F000E3F866 /* Utils.h */,
 				7494E8CE168CE1F000E3F866 /* Utils.m */,
-				74EF807E169CB273001538A3 /* Projection.h */,
-				74EF807F169CB273001538A3 /* Projection.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -322,10 +334,52 @@
 		74BEE70B169DFF2600B17A37 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				74BEE7BB169F574200B17A37 /* Map */,
+				74BEE7B9169F573600B17A37 /* Location */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		74BEE7B9169F573600B17A37 /* Location */ = {
+			isa = PBXGroup;
+			children = (
 				74BEE70D169DFF3F00B17A37 /* LocationService.h */,
 				74BEE70E169DFF3F00B17A37 /* LocationService.m */,
 			);
-			name = Services;
+			name = Location;
+			sourceTree = "<group>";
+		};
+		74BEE7BB169F574200B17A37 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				74BEE7BC169F575700B17A37 /* MapService.h */,
+				74BEE7BD169F575700B17A37 /* MapService.m */,
+				74BEE7BF169F575D00B17A37 /* TilesSource */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		74BEE7BF169F575D00B17A37 /* TilesSource */ = {
+			isa = PBXGroup;
+			children = (
+				74BEE7C9169F5A1F00B17A37 /* TilesSource.h */,
+				74BEE7CA169F5A2000B17A37 /* TilesSource.m */,
+				74BEE7CC169F5AAB00B17A37 /* TilesSourceCapabilities.h */,
+				74BEE7CD169F5AAB00B17A37 /* TilesSourceCapabilities.m */,
+				74BEE7C0169F576F00B17A37 /* IGN */,
+			);
+			name = TilesSource;
+			sourceTree = "<group>";
+		};
+		74BEE7C0169F576F00B17A37 /* IGN */ = {
+			isa = PBXGroup;
+			children = (
+				74BEE7C1169F578F00B17A37 /* IGNTilesSource.h */,
+				74BEE7C2169F578F00B17A37 /* IGNTilesSource.m */,
+				745EE8DB169F794800FE60E9 /* IGNTilesSourceCapabilities.h */,
+				745EE8DC169F794800FE60E9 /* IGNTilesSourceCapabilities.m */,
+			);
+			name = IGN;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -471,8 +525,12 @@
 				7494E8EF168CEF4400E3F866 /* HomeViewController.m in Sources */,
 				7494E985168E405F00E3F866 /* ModalViewController.m in Sources */,
 				7494E9A2168E486900E3F866 /* MapViewController.m in Sources */,
-				74EF8080169CB273001538A3 /* Projection.m in Sources */,
 				74BEE70F169DFF3F00B17A37 /* LocationService.m in Sources */,
+				74BEE7BE169F575700B17A37 /* MapService.m in Sources */,
+				74BEE7C3169F578F00B17A37 /* IGNTilesSource.m in Sources */,
+				74BEE7CB169F5A2000B17A37 /* TilesSource.m in Sources */,
+				74BEE7CE169F5AAC00B17A37 /* TilesSourceCapabilities.m in Sources */,
+				745EE8DD169F794800FE60E9 /* IGNTilesSourceCapabilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,9 +538,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74BEE7CF169F749000B17A37 /* TilesSource.m in Sources */,
+				74BEE7D0169F749000B17A37 /* TilesSourceCapabilities.m in Sources */,
+				74BEE7D1169F749000B17A37 /* IGNTilesSource.m in Sources */,
 				741C1E75168CB20400FAB66C /* MyWays_iOSTests.m in Sources */,
 				74EF8087169CBA1A001538A3 /* ProjectionTests.m in Sources */,
-				74EF8088169CBAE4001538A3 /* Projection.m in Sources */,
 				74BEE710169DFF3F00B17A37 /* LocationService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

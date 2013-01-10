@@ -17,15 +17,6 @@ static inline BOOL IsNullOrEmpty(id thing) {
     || ([thing respondsToSelector:@selector(count)] && [(NSArray *)thing count] == 0);
 }
 
-typedef struct {
-    int tileRow;
-    int tileCol;
-} MWTilePoint;
-
-static inline MWTilePoint MWTilePointMake(int tileRow, int tileCol) {
-    MWTilePoint p; p.tileRow = tileRow; p.tileCol = tileCol; return p;
-}
-
 @interface Utils : NSObject
 
 @end
