@@ -8,11 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MapViewController : NSObject
-
-@property (weak, nonatomic) IBOutlet UIView* view;
-
-- (id) initWithParentViewController:(ViewController*)viewController;
-- (void) didReceiveMemoryWarning;
+@interface MapViewController : UIViewController
 
 @end

@@ -82,15 +82,6 @@ NSString* const IGNLicenceKey = @"f5vr9noizast10f92d822zor";
 
 #pragma mark - CORE public interface
 
-- (UIImage*) getTileImageForLevel:(int)level andLatitudeInDegrees:(double)latitudeInDegrees andLongitudeInDegrees:(double)longitudeInDegrees {
-    
-    TileCoordinates tileCoordinates = [self getTileCoordinatesForLevel:level andLatitudeInDegrees:latitudeInDegrees andLongitudeInDegrees:longitudeInDegrees];
-    NSURLRequest* tileRequest = [self getTileRequestForLevel:level andTileCoordinates:tileCoordinates]; 
-    return [self getImageSynchronous:tileRequest];
-}
-
-#pragma mark - CORE private methods
-
 - (TileCoordinates) getTileCoordinatesForLevel:(int)level andLatitudeInDegrees:(double)latitudeInDegrees andLongitudeInDegrees:(double)longitudeInDegrees {
     
     // Get the tileMatrix associated to this level
@@ -113,6 +104,14 @@ NSString* const IGNLicenceKey = @"f5vr9noizast10f92d822zor";
     return MWTileCoordinatesMake(TILEROW, TILECOL);
 }
 
+- (UIImage*) getTileImageForLevel:(int)level andTileCoordinates:(TileCoordinates)tileCoordinates {
+    NSURLRequest* request = [self getTileRequestForLevel:level andTileCoordinates:tileCoordinates];
+    NSURLResponse* response = nil;
+    NSError* error = nil;
+    NSData* data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    return [[UIImage alloc] initWithData:data];
+}
+
 - (NSURLRequest*) getTileRequestForLevel:(int)level andTileCoordinates:(TileCoordinates)tileCoordinates {
     
     // Forge the tile path
@@ -125,12 +124,7 @@ NSString* const IGNLicenceKey = @"f5vr9noizast10f92d822zor";
     return tileRequest;
 }
 
-- (UIImage*) getImageSynchronous:(NSURLRequest*)request {
-    NSURLResponse* response = nil;
-    NSError* error = nil;
-    NSData* data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
-    return [[UIImage alloc] initWithData:data];
-}
+
 
 
 

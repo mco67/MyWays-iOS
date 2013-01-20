@@ -76,9 +76,8 @@
                      completion:^(BOOL finished){}];
 }
 
-- (void) showModalView:(UIView*)view {
-    self.modalViewController.contentView = view;
-    
+
+- (void) presentViewController:(UIViewController*) viewController {
     [UIView animateWithDuration:0.4f delay:0 options:UIViewAnimationCurveEaseOut
                      animations:^{
                          CATransform3D rotationAndPerspectiveTransform = CATransform3DIdentity;
@@ -90,14 +89,13 @@
                      }
                      completion:^(BOOL finished){}];
     
-    [UIView animateWithDuration:0.4f delay:0.1f options:UIViewAnimationCurveEaseOut
-                     animations:^{self.modalViewController.visible = TRUE;}
-                     completion:^(BOOL finished){}];
+    [UIView animateWithDuration:0.0f delay:0.0f options:UIViewAnimationCurveEaseOut
+                     animations:^{}
+                     completion:^(BOOL finished){[self presentViewController:viewController animated:YES completion:nil];}];    
 }
 
-- (void) hideModalView {
-    
-    [UIView animateWithDuration:0.4f delay:0.0f options:UIViewAnimationCurveEaseOut
+- (void) dismissViewController {
+    [UIView animateWithDuration:0.4f delay:0.1f options:UIViewAnimationCurveEaseOut
                      animations:^{
                          CATransform3D rotationAndPerspectiveTransform = CATransform3DIdentity;
                          CGFloat radius = 0;
@@ -108,9 +106,7 @@
                          
                      }
                      completion:^(BOOL finished){}];
-    [UIView animateWithDuration:0.4f delay:0.1f options:UIViewAnimationCurveEaseOut
-                     animations:^{self.modalViewController.visible = FALSE;}
-                     completion:^(BOOL finished){}];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

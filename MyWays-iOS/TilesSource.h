@@ -22,6 +22,8 @@ static inline TileCoordinates MWTileCoordinatesMake(int tileRow, int tileCol) {
 
 @property (strong, nonatomic) TilesSourceCapabilities* capabilities;
 
-- (UIImage*) getTileImageForLevel:(int)level andLatitudeInDegrees:(double)latitudeInDegrees andLongitudeInDegrees:(double)longitudeInDegrees;
+- (TileCoordinates) getTileCoordinatesForLevel:(int)level andLatitudeInDegrees:(double)latitudeInDegrees andLongitudeInDegrees:(double)longitudeInDegrees;
+
+- (UIImage*) getTileImageForLevel:(int)level andTileCoordinates:(TileCoordinates)tileCoordinates;
 
 @end

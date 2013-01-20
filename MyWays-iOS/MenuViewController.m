@@ -73,8 +73,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
     
-    self.mapViewController = [[MapViewController alloc] initWithParentViewController:self.mainViewController];
-    [self.mainViewController showModalView:self.mapViewController.view];
+    self.mapViewController = [[MapViewController alloc] init];
+    [self.mainViewController presentViewController:self.mapViewController];
 }
 
 

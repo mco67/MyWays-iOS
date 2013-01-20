@@ -7,50 +7,46 @@
 //
 
 #import "MapViewController.h"
-#import "MapService.h"
+#import "MapView.h"
 #import "LocationService.h"
 #import "IGNTilesSource.h"
 
 
-
 @interface MapViewController () <LocationServiceDelegate>
 
-@property (weak, nonatomic) ViewController* mainViewController;
-@property (strong, nonatomic) MapService* mapService;
+@property (weak, nonatomic) IBOutlet MapView* mapView;
 @property (strong, nonatomic) LocationService* locationService;
-
-@property (weak, nonatomic) IBOutlet UIBarButtonItem* doneButton;
-@property (weak, nonatomic) IBOutlet UIImageView* imageView;
-@property (weak, nonatomic) IBOutlet UILabel* label;
 
 - (IBAction) onDoneButtonTap:(id)sender;
 
 @end
 
+
 @implementation MapViewController
 
-@synthesize view;
-@synthesize mainViewController;
+@synthesize mapView;
+@synthesize locationService;
 
-- (id)initWithParentViewController:(ViewController*)viewController {
-    if (self = [super init]) {
-        
-        // Store injected parameters
-        self.mainViewController = viewController;
-        
-        // Load the XIB
-        [[NSBundle mainBundle] loadNibNamed:@"MapViewController" owner:self options:nil];
-        
-        // Create the MapService
-        TilesSource* tileSource = [[IGNTilesSource alloc] init];
-        self.mapService = [[MapService alloc] initWithTilesSource:tileSource];
-        
-        // Create the locationService
-        self.locationService = [[LocationService alloc] init];
-        self.locationService.delegate = self;
-        [self.locationService start];
-    }
+- (id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {}
     return self;
+}
+
+- (void) viewDidLoad {
+    
+    // Create the TileSource
+    TilesSource* tilesSource = [[IGNTilesSource alloc] init];
+    
+    // Associate tileSource to mapView
+    self.mapView.tilesSource = tilesSource;
+    
+    [self.mapView reload];
+    
+    // Create the locationService
+    self.locationService = [[LocationService alloc] init];
+    self.locationService.delegate = self;
+    //[self.locationService start];
+    
 }
 
 - (void) locationUpdate:(CLLocation *)location {
@@ -58,14 +54,7 @@
     
     double latitudeInDegree = location.coordinate.latitude;
     double longitudeInDegree = location.coordinate.longitude;
-    
-    self.imageView.image = [self.mapService getTileImageForLevel:17 andLatitudeInDegrees:latitudeInDegree andLongitudeInDegrees:longitudeInDegree];
 }
-
-
-
-
-
 
 
 - (void) didReceiveMemoryWarning {
@@ -73,7 +62,7 @@
 }
 
 - (IBAction) onDoneButtonTap:(id)sender {
-    [self.mainViewController hideModalView];
+    [((ViewController*)self.presentingViewController) dismissViewController];
 }
 
 
