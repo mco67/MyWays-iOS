@@ -9,10 +9,11 @@
 #import <UIKit/UIKit.h>
 
 #import "AppDelegate.h"
+#import "UIImage+Additions_568.h"
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
     @autoreleasepool {
+        [UIImage patchImageNamedToSupport568Resources];
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }

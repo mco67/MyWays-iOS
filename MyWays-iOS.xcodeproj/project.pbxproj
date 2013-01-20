@@ -15,7 +15,6 @@
 		741C1E51168CB20400FAB66C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 741C1E50168CB20400FAB66C /* AppDelegate.m */; };
 		741C1E53168CB20400FAB66C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 741C1E52168CB20400FAB66C /* Default.png */; };
 		741C1E55168CB20400FAB66C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 741C1E54168CB20400FAB66C /* Default@2x.png */; };
-		741C1E57168CB20400FAB66C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 741C1E56168CB20400FAB66C /* Default-568h@2x.png */; };
 		741C1E5A168CB20400FAB66C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 741C1E59168CB20400FAB66C /* ViewController.m */; };
 		741C1E5D168CB20400FAB66C /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 741C1E5B168CB20400FAB66C /* ViewController_iPhone.xib */; };
 		741C1E60168CB20400FAB66C /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 741C1E5E168CB20400FAB66C /* ViewController_iPad.xib */; };
@@ -54,6 +53,10 @@
 		74E8D57216A0A5EC00525A1E /* TiledLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E8D57116A0A5EB00525A1E /* TiledLayer.m */; };
 		74EF8087169CBA1A001538A3 /* ProjectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EF8086169CBA1A001538A3 /* ProjectionTests.m */; };
 		74EF8089169CC0F7001538A3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7494E8BF168CDA8200E3F866 /* CoreLocation.framework */; };
+		74F92EA116AC8E0E00E1C6C5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74F92EA016AC8E0E00E1C6C5 /* Default-568h@2x.png */; };
+		74F92EA516AC8E1F00E1C6C5 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74F92EA416AC8E1F00E1C6C5 /* icon@2x.png */; };
+		74F92EA716AC8E3E00E1C6C5 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74F92EA616AC8E3E00E1C6C5 /* icon@2x.png */; };
+		74F92EC516AC916100E1C6C5 /* UIImage+Additions_568.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F92EC416AC916100E1C6C5 /* UIImage+Additions_568.m */; };
 		79E6DA721FBD413DB29B88C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F9EE66B3D64641A7ACFA22 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -81,7 +84,6 @@
 		741C1E50168CB20400FAB66C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		741C1E52168CB20400FAB66C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		741C1E54168CB20400FAB66C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		741C1E56168CB20400FAB66C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		741C1E58168CB20400FAB66C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		741C1E59168CB20400FAB66C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		741C1E5C168CB20400FAB66C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
@@ -131,6 +133,11 @@
 		74E8D57116A0A5EB00525A1E /* TiledLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiledLayer.m; sourceTree = "<group>"; };
 		74EF8085169CBA1A001538A3 /* ProjectionTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectionTests.h; sourceTree = "<group>"; };
 		74EF8086169CBA1A001538A3 /* ProjectionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectionTests.m; sourceTree = "<group>"; };
+		74F92EA016AC8E0E00E1C6C5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Resources/Default-568h@2x.png"; sourceTree = "<group>"; };
+		74F92EA416AC8E1F00E1C6C5 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "Resources/icon@2x.png"; sourceTree = "<group>"; };
+		74F92EA616AC8E3E00E1C6C5 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		74F92EC316AC916100E1C6C5 /* UIImage+Additions_568.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Additions_568.h"; sourceTree = "<group>"; };
+		74F92EC416AC916100E1C6C5 /* UIImage+Additions_568.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Additions_568.m"; sourceTree = "<group>"; };
 		ABD67DB727B140809D1F826D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -165,6 +172,7 @@
 		741C1E31168CB20400FAB66C = {
 			isa = PBXGroup;
 			children = (
+				74F92EA616AC8E3E00E1C6C5 /* icon@2x.png */,
 				7494E9A4168E536200E3F866 /* QuartzCore.framework */,
 				741C1E46168CB20400FAB66C /* MyWays-iOS */,
 				741C1E6D168CB20400FAB66C /* MyWays-iOSTests */,
@@ -220,13 +228,13 @@
 		741C1E47168CB20400FAB66C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				74F92EA016AC8E0E00E1C6C5 /* Default-568h@2x.png */,
 				741C1E48168CB20400FAB66C /* MyWays-iOS-Info.plist */,
 				741C1E49168CB20400FAB66C /* InfoPlist.strings */,
 				741C1E4C168CB20400FAB66C /* main.m */,
 				741C1E4E168CB20400FAB66C /* MyWays-iOS-Prefix.pch */,
 				741C1E52168CB20400FAB66C /* Default.png */,
 				741C1E54168CB20400FAB66C /* Default@2x.png */,
-				741C1E56168CB20400FAB66C /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -255,6 +263,7 @@
 		7494E8C2168CDF9200E3F866 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				74F92EA316AC8E1200E1C6C5 /* Icon */,
 				7494E97F168E3C2700E3F866 /* Generic */,
 				7494E97E168E3C1E00E3F866 /* MenuView */,
 			);
@@ -264,6 +273,8 @@
 		7494E8CC168CE1D600E3F866 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				74F92EC316AC916100E1C6C5 /* UIImage+Additions_568.h */,
+				74F92EC416AC916100E1C6C5 /* UIImage+Additions_568.m */,
 				7494E8CD168CE1F000E3F866 /* Utils.h */,
 				7494E8CE168CE1F000E3F866 /* Utils.m */,
 			);
@@ -392,6 +403,14 @@
 			name = IGN;
 			sourceTree = "<group>";
 		};
+		74F92EA316AC8E1200E1C6C5 /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				74F92EA416AC8E1F00E1C6C5 /* icon@2x.png */,
+			);
+			name = Icon;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -467,7 +486,6 @@
 				741C1E4B168CB20400FAB66C /* InfoPlist.strings in Resources */,
 				741C1E53168CB20400FAB66C /* Default.png in Resources */,
 				741C1E55168CB20400FAB66C /* Default@2x.png in Resources */,
-				741C1E57168CB20400FAB66C /* Default-568h@2x.png in Resources */,
 				741C1E5D168CB20400FAB66C /* ViewController_iPhone.xib in Resources */,
 				741C1E60168CB20400FAB66C /* ViewController_iPad.xib in Resources */,
 				7494E8DA168CEACB00E3F866 /* MenuViewController.xib in Resources */,
@@ -479,6 +497,9 @@
 				7494E8F2168CFA2B00E3F866 /* navBar_menu_icon@2x.png in Resources */,
 				7494E981168E3C3700E3F866 /* menuCell_background@2x.png in Resources */,
 				7494E9A3168E486900E3F866 /* MapViewController.xib in Resources */,
+				74F92EA116AC8E0E00E1C6C5 /* Default-568h@2x.png in Resources */,
+				74F92EA516AC8E1F00E1C6C5 /* icon@2x.png in Resources */,
+				74F92EA716AC8E3E00E1C6C5 /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,6 +564,7 @@
 				745EE8DD169F794800FE60E9 /* IGNTilesSourceCapabilities.m in Sources */,
 				74E8D56F16A0A28500525A1E /* TiledView.m in Sources */,
 				74E8D57216A0A5EC00525A1E /* TiledLayer.m in Sources */,
+				74F92EC516AC916100E1C6C5 /* UIImage+Additions_568.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

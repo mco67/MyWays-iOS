@@ -19,6 +19,9 @@
 @property (strong, nonatomic) MenuViewController* menuViewController;
 @property (strong, nonatomic) HomeViewController* homeViewController;
 @property (strong, nonatomic) UIView* homeContainerView;
+@property (strong, nonatomic) UIView* splashScreenView;
+@property (strong, nonatomic) UIView* splashScreenLeftView;
+@property (strong, nonatomic) UIView* splashScreenRightView;
 
 @end
 
@@ -29,6 +32,9 @@
 @synthesize menuViewController;
 @synthesize homeViewController;
 @synthesize homeContainerView;
+@synthesize splashScreenView;
+@synthesize splashScreenLeftView;
+@synthesize splashScreenRightView;
 
 - (void) viewDidLoad {
     [super viewDidLoad];
@@ -53,6 +59,47 @@
     // Create the ModalViewController
     self.modalViewController = [[ModalViewController alloc] initWithParentViewController:self];
     [self.view addSubview:self.modalViewController.view];
+    
+    // Create view for splashScreen animation
+    self.splashScreenView = [[UIView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:self.splashScreenView];
+    
+    
+    
+    UIImage* splashScreenImage = [UIImage imageNamed:@"Default"];
+    CGFloat splittedSplashScreenWidth = CGRectGetWidth(self.view.bounds)/2.0;
+    CGFloat splittedSplashScreenHeight = CGRectGetHeight(self.view.bounds);
+
+    self.splashScreenRightView = [[UIView alloc] init];
+    self.splashScreenRightView.layer.anchorPoint = CGPointMake(1.0, 0.5);
+    self.splashScreenRightView.frame = CGRectMake(splittedSplashScreenWidth, 0 ,splittedSplashScreenWidth, splittedSplashScreenHeight);
+    self.splashScreenRightView.clipsToBounds = TRUE;
+    UIImageView* splittedRightImageView = [[UIImageView alloc] initWithImage:splashScreenImage];
+    splittedRightImageView.frame = CGRectOffset(self.view.bounds, -splittedSplashScreenWidth, 0);
+    [self.splashScreenRightView addSubview: splittedRightImageView];
+    [self.splashScreenView addSubview:self.splashScreenRightView];
+    
+    self.splashScreenLeftView = [[UIView alloc] init];
+    self.splashScreenLeftView.layer.anchorPoint = CGPointMake(0.0, 0.5);
+    self.splashScreenLeftView.frame = CGRectMake(0, 0 ,splittedSplashScreenWidth, splittedSplashScreenHeight);
+    self.splashScreenLeftView.clipsToBounds = TRUE;
+    UIImageView* splittedLeftImageView = [[UIImageView alloc] initWithImage:splashScreenImage];
+    splittedLeftImageView.frame = CGRectOffset(self.view.bounds, 0, 0);
+    [self.splashScreenLeftView addSubview: splittedLeftImageView];
+    [self.splashScreenView addSubview:self.splashScreenLeftView];
+    
+    [UIView animateWithDuration:2.0f delay:1.0 options:UIViewAnimationCurveEaseOut
+                     animations:^{
+                         CATransform3D rightTransform = CATransform3DIdentity;
+                         CATransform3D leftTransform = CATransform3DIdentity;
+                         rightTransform.m34 = leftTransform.m34 = -1.0/300.0;
+                         rightTransform = CATransform3DRotate(rightTransform,M_PI_2, 0.0f, -1.0f, 0.0f);
+                         leftTransform = CATransform3DRotate(leftTransform,M_PI_2, 0.0f, 1.0f, 0.0f);
+                         self.splashScreenRightView.layer.transform = rightTransform;
+                         self.splashScreenLeftView.layer.transform = leftTransform;
+
+                     }
+                     completion:^(BOOL finished){self.splashScreenView.hidden = TRUE;}];
 }
 
 - (void) didReceiveMemoryWarning {
@@ -61,6 +108,8 @@
     [self.homeViewController didReceiveMemoryWarning];
     [self.modalViewController didReceiveMemoryWarning];
 }
+
+    
 
 
 - (void) showHideInfoView {
