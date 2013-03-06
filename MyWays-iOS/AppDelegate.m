@@ -7,29 +7,42 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "MainViewController.h"
+
+
+@interface AppDelegate()
+
+@property (strong, nonatomic) MainViewController* mainViewController;
+
+@end
+
 
 @implementation AppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+@synthesize mainViewController;
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
     // Create the main window
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
     // Customize application look and feel
     [self lookAndFeelCustomisation];
+
+    // Create the mainView controller
+    self.mainViewController = [[MainViewController alloc] init];
     
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[ViewController alloc] initWithNibName:@"ViewController_iPhone" bundle:nil];
-    } else {
-        self.viewController = [[ViewController alloc] initWithNibName:@"ViewController_iPad" bundle:nil];
-    }
-    self.window.rootViewController = self.viewController;
+    // Assign ViewDeck controller as rootViewController
+    self.window.rootViewController = self.mainViewController;
+    
+    // Display the main window
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
-- (void) lookAndFeelCustomisation {
+- (void)lookAndFeelCustomisation
+{
     // Customize navigationBar background
     UIImage* navbarBackground = [UIImage imageNamed:@"navBar_background_light.png"];
     [[UINavigationBar appearance] setBackgroundImage:navbarBackground forBarMetrics:UIBarMetricsDefault];
@@ -55,7 +68,6 @@
                                                           [UIColor clearColor],UITextAttributeTextShadowColor,nil]];
 
 }
-
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

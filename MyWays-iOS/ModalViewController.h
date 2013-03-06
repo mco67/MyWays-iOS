@@ -14,7 +14,7 @@
 @property (strong, nonatomic) UIView* contentView;
 @property (nonatomic) Boolean visible;
 
-- (id)initWithParentViewController:(ViewController*)viewController;
+- (id)initWithParentViewController:(MainViewController*)viewController;
 - (void) didReceiveMemoryWarning;
 
 @end

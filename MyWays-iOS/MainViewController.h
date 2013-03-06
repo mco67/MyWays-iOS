@@ -8,12 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface MainViewController : UIViewController
 
-
-- (void) presentViewController:(UIViewController*) viewController;
+- (void) presentViewController:(UIViewController*)viewController;
 - (void) dismissViewController;
-- (void) showHideInfoView;
-
 
 @end

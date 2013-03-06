@@ -8,11 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MenuViewController : NSObject
-
-@property (strong, nonatomic) IBOutlet UIView* view;
-
-- (id)initWithParentViewController:(ViewController*)viewController;
-- (void) didReceiveMemoryWarning;
+@interface MenuViewController : UIViewController
 
 @end

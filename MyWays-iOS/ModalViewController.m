@@ -10,7 +10,7 @@
 
 @interface ModalViewController ()
 
-@property (weak, nonatomic) ViewController* mainViewController;
+@property (weak, nonatomic) MainViewController* mainViewController;
 
 @end
 
@@ -21,7 +21,7 @@
 @synthesize visible;
 @synthesize mainViewController;
 
-- (id) initWithParentViewController:(ViewController*)viewController {
+- (id) initWithParentViewController:(MainViewController*)viewController {
     if (self = [super init]) {
         
         // Store the mainViewController reference

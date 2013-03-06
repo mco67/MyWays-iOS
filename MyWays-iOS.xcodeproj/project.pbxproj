@@ -15,15 +15,19 @@
 		741C1E51168CB20400FAB66C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 741C1E50168CB20400FAB66C /* AppDelegate.m */; };
 		741C1E53168CB20400FAB66C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 741C1E52168CB20400FAB66C /* Default.png */; };
 		741C1E55168CB20400FAB66C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 741C1E54168CB20400FAB66C /* Default@2x.png */; };
-		741C1E5A168CB20400FAB66C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 741C1E59168CB20400FAB66C /* ViewController.m */; };
-		741C1E5D168CB20400FAB66C /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 741C1E5B168CB20400FAB66C /* ViewController_iPhone.xib */; };
-		741C1E60168CB20400FAB66C /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 741C1E5E168CB20400FAB66C /* ViewController_iPad.xib */; };
+		741C1E5A168CB20400FAB66C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 741C1E59168CB20400FAB66C /* MainViewController.m */; };
+		741C1E5D168CB20400FAB66C /* MainViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 741C1E5B168CB20400FAB66C /* MainViewController_iPhone.xib */; };
+		741C1E60168CB20400FAB66C /* MainViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 741C1E5E168CB20400FAB66C /* MainViewController_iPad.xib */; };
 		741C1E68168CB20400FAB66C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741C1E67168CB20400FAB66C /* SenTestingKit.framework */; };
 		741C1E69168CB20400FAB66C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741C1E40168CB20400FAB66C /* UIKit.framework */; };
 		741C1E6A168CB20400FAB66C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741C1E42168CB20400FAB66C /* Foundation.framework */; };
 		741C1E72168CB20400FAB66C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 741C1E70168CB20400FAB66C /* InfoPlist.strings */; };
 		741C1E75168CB20400FAB66C /* MyWays_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 741C1E74168CB20400FAB66C /* MyWays_iOSTests.m */; };
 		745EE8DD169F794800FE60E9 /* IGNTilesSourceCapabilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 745EE8DC169F794800FE60E9 /* IGNTilesSourceCapabilities.m */; };
+		74853BF516B1D1C30005E3C5 /* WayListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74853BF316B1D1C30005E3C5 /* WayListViewController.m */; };
+		74853BF616B1D1C30005E3C5 /* WayListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74853BF316B1D1C30005E3C5 /* WayListViewController.m */; };
+		74853BF716B1D1C30005E3C5 /* WayListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74853BF416B1D1C30005E3C5 /* WayListViewController.xib */; };
+		74853BF816B1D1C30005E3C5 /* WayListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74853BF416B1D1C30005E3C5 /* WayListViewController.xib */; };
 		7494E8C0168CDA8200E3F866 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7494E8BF168CDA8200E3F866 /* CoreLocation.framework */; };
 		7494E8CF168CE1F000E3F866 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7494E8CE168CE1F000E3F866 /* Utils.m */; };
 		7494E8D9168CEACB00E3F866 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7494E8D7168CEACB00E3F866 /* MenuViewController.m */; };
@@ -32,8 +36,6 @@
 		7494E8E4168CED3500E3F866 /* navBar_background_light@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7494E8E0168CED3500E3F866 /* navBar_background_light@2x.png */; };
 		7494E8E9168CEDAD00E3F866 /* navBar_button_active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7494E8E7168CEDAD00E3F866 /* navBar_button_active@2x.png */; };
 		7494E8EA168CEDAD00E3F866 /* navBar_button_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7494E8E8168CEDAD00E3F866 /* navBar_button_press@2x.png */; };
-		7494E8EF168CEF4400E3F866 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7494E8ED168CEF4400E3F866 /* HomeViewController.m */; };
-		7494E8F0168CEF4400E3F866 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7494E8EE168CEF4400E3F866 /* HomeViewController.xib */; };
 		7494E8F2168CFA2B00E3F866 /* navBar_menu_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7494E8F1168CFA2B00E3F866 /* navBar_menu_icon@2x.png */; };
 		7494E981168E3C3700E3F866 /* menuCell_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7494E980168E3C3700E3F866 /* menuCell_background@2x.png */; };
 		7494E985168E405F00E3F866 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7494E984168E405F00E3F866 /* ModalViewController.m */; };
@@ -84,10 +86,10 @@
 		741C1E50168CB20400FAB66C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		741C1E52168CB20400FAB66C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		741C1E54168CB20400FAB66C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		741C1E58168CB20400FAB66C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		741C1E59168CB20400FAB66C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		741C1E5C168CB20400FAB66C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
-		741C1E5F168CB20400FAB66C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		741C1E58168CB20400FAB66C /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		741C1E59168CB20400FAB66C /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		741C1E5C168CB20400FAB66C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainViewController_iPhone.xib; sourceTree = "<group>"; };
+		741C1E5F168CB20400FAB66C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainViewController_iPad.xib; sourceTree = "<group>"; };
 		741C1E66168CB20400FAB66C /* MyWays-iOSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MyWays-iOSTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		741C1E67168CB20400FAB66C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		741C1E6F168CB20400FAB66C /* MyWays-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyWays-iOSTests-Info.plist"; sourceTree = "<group>"; };
@@ -96,6 +98,9 @@
 		741C1E74168CB20400FAB66C /* MyWays_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWays_iOSTests.m; sourceTree = "<group>"; };
 		745EE8DB169F794800FE60E9 /* IGNTilesSourceCapabilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGNTilesSourceCapabilities.h; sourceTree = "<group>"; };
 		745EE8DC169F794800FE60E9 /* IGNTilesSourceCapabilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGNTilesSourceCapabilities.m; sourceTree = "<group>"; };
+		74853BF216B1D1C30005E3C5 /* WayListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WayListViewController.h; sourceTree = "<group>"; };
+		74853BF316B1D1C30005E3C5 /* WayListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WayListViewController.m; sourceTree = "<group>"; };
+		74853BF416B1D1C30005E3C5 /* WayListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WayListViewController.xib; sourceTree = "<group>"; };
 		7494E8BF168CDA8200E3F866 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7494E8CD168CE1F000E3F866 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		7494E8CE168CE1F000E3F866 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
@@ -106,9 +111,6 @@
 		7494E8E0168CED3500E3F866 /* navBar_background_light@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navBar_background_light@2x.png"; path = "Resources/navBar_background_light@2x.png"; sourceTree = "<group>"; };
 		7494E8E7168CEDAD00E3F866 /* navBar_button_active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navBar_button_active@2x.png"; path = "Resources/navBar_button_active@2x.png"; sourceTree = "<group>"; };
 		7494E8E8168CEDAD00E3F866 /* navBar_button_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navBar_button_press@2x.png"; path = "Resources/navBar_button_press@2x.png"; sourceTree = "<group>"; };
-		7494E8EC168CEF4400E3F866 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		7494E8ED168CEF4400E3F866 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		7494E8EE168CEF4400E3F866 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		7494E8F1168CFA2B00E3F866 /* navBar_menu_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navBar_menu_icon@2x.png"; path = "Resources/navBar_menu_icon@2x.png"; sourceTree = "<group>"; };
 		7494E980168E3C3700E3F866 /* menuCell_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menuCell_background@2x.png"; path = "Resources/menuCell_background@2x.png"; sourceTree = "<group>"; };
 		7494E983168E405F00E3F866 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
@@ -207,19 +209,16 @@
 		741C1E46168CB20400FAB66C /* MyWays-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				74BEE70B169DFF2600B17A37 /* Services */,
+				74DAF39816E7DCB700DA5F1E /* Main */,
+				74853BF116B1D1700005E3C5 /* WayList */,
 				7494E99E168E484900E3F866 /* Map */,
+				74853BE216B1CD560005E3C5 /* External */,
+				74BEE70B169DFF2600B17A37 /* Services */,
 				7494E982168E403500E3F866 /* Modal */,
-				7494E8EB168CEF2900E3F866 /* Home */,
 				7494E8D5168CEA9400E3F866 /* Menu */,
 				7494E8CC168CE1D600E3F866 /* Utils */,
 				7494E8C2168CDF9200E3F866 /* Resources */,
-				741C1E4F168CB20400FAB66C /* AppDelegate.h */,
-				741C1E50168CB20400FAB66C /* AppDelegate.m */,
-				741C1E58168CB20400FAB66C /* ViewController.h */,
-				741C1E59168CB20400FAB66C /* ViewController.m */,
-				741C1E5B168CB20400FAB66C /* ViewController_iPhone.xib */,
-				741C1E5E168CB20400FAB66C /* ViewController_iPad.xib */,
+				741C1E5E168CB20400FAB66C /* MainViewController_iPad.xib */,
 				741C1E47168CB20400FAB66C /* Supporting Files */,
 			);
 			path = "MyWays-iOS";
@@ -258,6 +257,23 @@
 				741C1E70168CB20400FAB66C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		74853BE216B1CD560005E3C5 /* External */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		74853BF116B1D1700005E3C5 /* WayList */ = {
+			isa = PBXGroup;
+			children = (
+				74853BF216B1D1C30005E3C5 /* WayListViewController.h */,
+				74853BF316B1D1C30005E3C5 /* WayListViewController.m */,
+				74853BF416B1D1C30005E3C5 /* WayListViewController.xib */,
+			);
+			name = WayList;
 			sourceTree = "<group>";
 		};
 		7494E8C2168CDF9200E3F866 /* Resources */ = {
@@ -301,16 +317,6 @@
 				7494E8D8168CEACB00E3F866 /* MenuViewController.xib */,
 			);
 			name = Menu;
-			sourceTree = "<group>";
-		};
-		7494E8EB168CEF2900E3F866 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				7494E8EC168CEF4400E3F866 /* HomeViewController.h */,
-				7494E8ED168CEF4400E3F866 /* HomeViewController.m */,
-				7494E8EE168CEF4400E3F866 /* HomeViewController.xib */,
-			);
-			name = Home;
 			sourceTree = "<group>";
 		};
 		7494E97E168E3C1E00E3F866 /* MenuView */ = {
@@ -403,6 +409,18 @@
 			name = IGN;
 			sourceTree = "<group>";
 		};
+		74DAF39816E7DCB700DA5F1E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				741C1E4F168CB20400FAB66C /* AppDelegate.h */,
+				741C1E50168CB20400FAB66C /* AppDelegate.m */,
+				741C1E58168CB20400FAB66C /* MainViewController.h */,
+				741C1E59168CB20400FAB66C /* MainViewController.m */,
+				741C1E5B168CB20400FAB66C /* MainViewController_iPhone.xib */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		74F92EA316AC8E1200E1C6C5 /* Icon */ = {
 			isa = PBXGroup;
 			children = (
@@ -486,20 +504,20 @@
 				741C1E4B168CB20400FAB66C /* InfoPlist.strings in Resources */,
 				741C1E53168CB20400FAB66C /* Default.png in Resources */,
 				741C1E55168CB20400FAB66C /* Default@2x.png in Resources */,
-				741C1E5D168CB20400FAB66C /* ViewController_iPhone.xib in Resources */,
-				741C1E60168CB20400FAB66C /* ViewController_iPad.xib in Resources */,
+				741C1E5D168CB20400FAB66C /* MainViewController_iPhone.xib in Resources */,
+				741C1E60168CB20400FAB66C /* MainViewController_iPad.xib in Resources */,
 				7494E8DA168CEACB00E3F866 /* MenuViewController.xib in Resources */,
 				7494E8E3168CED3500E3F866 /* navBar_background_dark@2x.png in Resources */,
 				7494E8E4168CED3500E3F866 /* navBar_background_light@2x.png in Resources */,
 				7494E8E9168CEDAD00E3F866 /* navBar_button_active@2x.png in Resources */,
 				7494E8EA168CEDAD00E3F866 /* navBar_button_press@2x.png in Resources */,
-				7494E8F0168CEF4400E3F866 /* HomeViewController.xib in Resources */,
 				7494E8F2168CFA2B00E3F866 /* navBar_menu_icon@2x.png in Resources */,
 				7494E981168E3C3700E3F866 /* menuCell_background@2x.png in Resources */,
 				7494E9A3168E486900E3F866 /* MapViewController.xib in Resources */,
 				74F92EA116AC8E0E00E1C6C5 /* Default-568h@2x.png in Resources */,
 				74F92EA516AC8E1F00E1C6C5 /* icon@2x.png in Resources */,
 				74F92EA716AC8E3E00E1C6C5 /* icon@2x.png in Resources */,
+				74853BF716B1D1C30005E3C5 /* WayListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,6 +526,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				741C1E72168CB20400FAB66C /* InfoPlist.strings in Resources */,
+				74853BF816B1D1C30005E3C5 /* WayListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,10 +569,9 @@
 			files = (
 				741C1E4D168CB20400FAB66C /* main.m in Sources */,
 				741C1E51168CB20400FAB66C /* AppDelegate.m in Sources */,
-				741C1E5A168CB20400FAB66C /* ViewController.m in Sources */,
+				741C1E5A168CB20400FAB66C /* MainViewController.m in Sources */,
 				7494E8CF168CE1F000E3F866 /* Utils.m in Sources */,
 				7494E8D9168CEACB00E3F866 /* MenuViewController.m in Sources */,
-				7494E8EF168CEF4400E3F866 /* HomeViewController.m in Sources */,
 				7494E985168E405F00E3F866 /* ModalViewController.m in Sources */,
 				7494E9A2168E486900E3F866 /* MapViewController.m in Sources */,
 				74BEE70F169DFF3F00B17A37 /* LocationService.m in Sources */,
@@ -565,6 +583,7 @@
 				74E8D56F16A0A28500525A1E /* TiledView.m in Sources */,
 				74E8D57216A0A5EC00525A1E /* TiledLayer.m in Sources */,
 				74F92EC516AC916100E1C6C5 /* UIImage+Additions_568.m in Sources */,
+				74853BF516B1D1C30005E3C5 /* WayListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +597,7 @@
 				741C1E75168CB20400FAB66C /* MyWays_iOSTests.m in Sources */,
 				74EF8087169CBA1A001538A3 /* ProjectionTests.m in Sources */,
 				74BEE710169DFF3F00B17A37 /* LocationService.m in Sources */,
+				74853BF616B1D1C30005E3C5 /* WayListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,20 +620,20 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		741C1E5B168CB20400FAB66C /* ViewController_iPhone.xib */ = {
+		741C1E5B168CB20400FAB66C /* MainViewController_iPhone.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				741C1E5C168CB20400FAB66C /* en */,
 			);
-			name = ViewController_iPhone.xib;
+			name = MainViewController_iPhone.xib;
 			sourceTree = "<group>";
 		};
-		741C1E5E168CB20400FAB66C /* ViewController_iPad.xib */ = {
+		741C1E5E168CB20400FAB66C /* MainViewController_iPad.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				741C1E5F168CB20400FAB66C /* en */,
 			);
-			name = ViewController_iPad.xib;
+			name = MainViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 		741C1E70168CB20400FAB66C /* InfoPlist.strings */ = {

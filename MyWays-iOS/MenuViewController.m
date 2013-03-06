@@ -14,27 +14,16 @@
 
 @property (weak, nonatomic) IBOutlet UITableView* tableView;
 @property (weak, nonatomic) IBOutlet UIView* headerView;
-@property (weak, nonatomic) ViewController* mainViewController;
-
 @property (strong, nonatomic) MapViewController* mapViewController;
 
 @end
 
 @implementation MenuViewController
 
-- (id)initWithParentViewController:(ViewController*)viewController {
-    if (self = [super init]) {
-        
-        // Store injected parameters
-        self.mainViewController = viewController;
-        
-        // Load the XIB
-        [[NSBundle mainBundle] loadNibNamed:@"MenuViewController" owner:self options:nil];
-        
-        // Configure headerView background
-        self.headerView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"navBar_background_dark.png"]];
-    }
-    return self;
+- (void) viewDidLoad {
+    // Configure headerView background
+    self.headerView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"navBar_background_dark.png"]];
+    
 }
 
 - (void) didReceiveMemoryWarning {
@@ -73,8 +62,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
     
-    self.mapViewController = [[MapViewController alloc] init];
-    [self.mainViewController presentViewController:self.mapViewController];
+    //self.mapViewController = [[MapViewController alloc] init];
+    //[self presentViewController:self.mapViewController];
 }
 
 

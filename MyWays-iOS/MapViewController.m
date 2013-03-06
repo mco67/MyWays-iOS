@@ -10,7 +10,7 @@
 #import "MapView.h"
 #import "LocationService.h"
 #import "IGNTilesSource.h"
-
+#import "MainViewController.h"
 
 @interface MapViewController () <LocationServiceDelegate>
 
@@ -62,7 +62,7 @@
 }
 
 - (IBAction) onDoneButtonTap:(id)sender {
-    [((ViewController*)self.presentingViewController) dismissViewController];
+    [((MainViewController*)self.presentingViewController) dismissViewController];
 }
 
 
